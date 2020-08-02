@@ -1,5 +1,6 @@
 #sonylogo {
-    padding: 20px;
+    /* padding: 20px; */
+    margin-top: 20px;
     width: 100%;
     max-width: 30vw;
 }
@@ -12,3 +13,25 @@ img.pianoroll {
 audio {
     width: 100%;
 }
+
+#logorow {
+    padding-top: 10px;
+}
+/* @media screen and (max-width: 1680px) { */
+
+/* } */
+
+/* @media screen and (max-width: 1366px) { */
+
+/* } */
+
+@media screen and (max-width: 736px) {
+
+    #sonylogo {
+	padding: 20px;
+	width: 100%;
+	max-width: 50vw;
+    }
+
+}
+
