@@ -1,11 +1,229 @@
+<!DOCTYPE HTML>
+<!--
+    Prism by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+  -->
 <html>
   <head>
-<title>BassNet demo page</title>
-</head>
-<body>
-<h1>BassNet demo page</h1>
-<p>
-  Under construction. This page is reserved to show BassNet examples accompanying the BassNet MDPI paper submission. Results will be posted by August 3 2020.
-</p>
-</body>
+    <title>BassNet Demo Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/extra.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+  </head>
+  <body>
+
+    <!-- Banner -->
+    <section id="banner">
+      <div class="inner">
+	<section>
+	  <h2><i>BassNet</i>: A Variational Gated Autoencoder for Conditional Generation of Bass Guitar Tracks with Learned Interactive Control</h2>
+	</section>
+      </div>
+      <div id="logorow" class="inner split">
+	<section class="align-center">
+	  <a href="https://csl.sony.fr/"><img id='sonylogo' src="images/sonycsl-white.png"></a>
+	</section>
+	<section class="align-center">
+	    Sony Computer Science Laboratories Paris
+	</section>
+      </div>
+    </section>
+
+
+    <section id="ex1" class="wrapper">
+      <div class="inner split">
+	<section>
+	  <p>This page provides supplementary material for the manuscript <i>BassNet: A Variational Gated Autoencoder for Conditional Generation of Bass Guitar Tracks with Learned Interactive Control</i>. The examples correspond to the examples discussed in Section 6.4.
+	  </p>
+	</section>
+      </div>
+    </section>
+
+    <!-- One -->
+    <section id="ex1" class="wrapper">
+      <h2>Example 1</h2>
+      <div class="inner split">
+	<section>
+	  <p>The source is a piano excerpt with strong rubato but clear onsets.  In both examples BassNet follows the tempo changes and provides realistic harmonies.  A notable difference between the variations is that variation 1 tends to rhythmically follow the 16th notes in the higher piano register (but using mostly low pitched notes), whereas variation 2 follows the slower, lower part of the piano (but with higher notes), overall leading to a sparser and quieter result in variation 2.
+	  </p>
+	</section>
+
+	<section>
+	  <div class="row uniform">
+	    <div class="4u 12u$(xsmall)">
+	      Source
+	    </div>
+	    <div class="7u$ 12u$(xsmall)">
+	      <audio controls><source src="assets/ex1/source.mp3" type="audio/mpeg"/> Your browser does not support the audio element.</audio>
+	    </div>
+
+	    <div class="4u 12u$(xsmall)">
+	      Pianoroll excerpt Bass Variation 1
+	    </div>
+	    <div class="7u$ 12u$(xsmall) ">
+	      <img class='pianoroll' src="images/ex1/var1.png">
+	    </div>
+	    
+	    <div class="4u 12u$(xsmall)">
+	      Bass Variation 1
+	    </div>
+	    <div class="7u$ 12u$(xsmall)">
+	      <audio controls><source src="assets/ex1/source_bass_var1.mp3" type="audio/mpeg"/> Your browser does not support the audio element.</audio>
+	    </div>
+
+	    <div class="4u 12u$(xsmall)">
+	      Pianoroll excerpt Bass Variation 2
+	    </div>
+	    <div class="7u$ 12u$(xsmall) ">
+	      <img class='pianoroll' src="images/ex1/var2.png">
+	    </div>
+
+	    <div class="4u 12u$(xsmall)">
+	      Bass Variation 2
+	    </div>
+	    <div class="7u$ 12u$(xsmall)">
+	      <audio controls><source src="assets/ex1/source_bass_var2.mp3" type="audio/mpeg"/> Your browser does not support the audio element.</audio>
+	    </div>
+ 	  </div>
+	</section>
+      </div>
+    </section>
+
+    <section id="ex2" class="wrapper style2 alt">
+      <h2>Example 2</h2>
+      <div class="inner split">
+	<section>
+	  <p>The source is a polyphonic fragment played by electric bass with non-trivial harmony.
+	    For this example the predicted bass tracks have been transposed one octave upward and quantized to 16th notes.
+	    The first variation is created using a latent position that is representative for the training data.
+	    The predicted bass line sometimes doubles parts in the source, and sometimes deviates from them.
+	    The output harmony is reasonable, and consistent with the input.
+	    The rhythm is mostly 8th notes like the source, with occasional 16th notes, that bring groove and variation.</p>
+
+	  <p>Variation 2 corresponds to a more remote positioning in the latent space.
+	    Accordingly the result is more exotic, and is reminiscent of improvisation and freestyling or fiddling with the bass.
+	    At some point it remains silent for three seconds, then goes on again.
+	    It is not unlike a human bass player trying something different, succeeding at particular points and failing at others.
+	  </p>
+	</section>
+
+	<section>
+	  <div class="row uniform">
+	    <div class="4u 12u$(xsmall)">
+	      Source
+	    </div>
+	    <div class="7u$ 12u$(xsmall)">
+	      <audio controls><source src="assets/ex2/source.mp3" type="audio/mpeg"/> Your browser does not support the audio element.</audio>
+	    </div>
+
+	    <div class="4u 12u$(xsmall)">
+	      Pianoroll excerpt Bass Variation 1
+	    </div>
+	    <div class="7u$ 12u$(xsmall) ">
+	      <img class='pianoroll' src="images/ex2/var1.png">
+	    </div>
+	    
+	    <div class="4u 12u$(xsmall)">
+	      Bass Variation 1
+	    </div>
+	    <div class="7u$ 12u$(xsmall)">
+	      <audio controls><source src="assets/ex2/source_bass_var1.mp3" type="audio/mpeg"/> Your browser does not support the audio element.</audio>
+	    </div>
+
+	    <div class="4u 12u$(xsmall)">
+	      Pianoroll excerpt Bass Variation 2
+	    </div>
+	    <div class="7u$ 12u$(xsmall) ">
+	      <img class='pianoroll' src="images/ex2/var2.png">
+	    </div>
+
+	    <div class="4u 12u$(xsmall)">
+	      Bass Variation 2
+	    </div>
+	    <div class="7u$ 12u$(xsmall)">
+	      <audio controls><source src="assets/ex2/source_bass_var2.mp3" type="audio/mpeg"/> Your browser does not support the audio element.</audio>
+	    </div>
+	  </div>
+	</section>
+      </div>
+    </section>
+
+    <section id="ex3" class="wrapper style2 alt">
+      <h2>Example 3</h2>
+      <div class="inner split">
+	<section>
+	  <p>The source is a combination of guitar and drums.
+	    The drum programming is uncommon in that it does not feature an alternation of kick and snare.
+	    The rhythm of the guitar part is slow and sparse, and the heavy distortion obfuscates the harmony.
+	    We believe providing a bass accompaniment to this example would be not be trivial for a human player.
+	    Like in previous example the predicted bass is transposed upward one octave and quantized to 16th notes.
+	  </p>
+	  <p>Both variations are quite similar in terms of pitch, and succeed in following the harmony of the guitar.
+	    In terms of rhythm BassNet produces uncommon grooves, likely in response to the atypical drum track.
+	    Varying the latent position in this case leads to different grooves.
+	  </p>
+	</section>
+	<section>
+	  <div class="row uniform">
+	    <div class="4u 12u$(xsmall)">
+	      Source
+	    </div>
+	    <div class="7u$ 12u$(xsmall)">
+	      <audio controls><source src="assets/ex3/source.mp3" type="audio/mpeg"/> Your browser does not support the audio element.</audio>
+	    </div>
+
+	    <div class="4u 12u$(xsmall)">
+	      Pianoroll excerpt Bass Variation 1
+	    </div>
+	    <div class="7u$ 12u$(xsmall) ">
+	      <img class='pianoroll' src="images/ex3/var1.png">
+	    </div>
+	    
+	    <div class="4u 12u$(xsmall)">
+	      Bass Variation 1
+	    </div>
+	    <div class="7u$ 12u$(xsmall)">
+	      <audio controls><source src="assets/ex3/source_bass_var1.mp3" type="audio/mpeg"/> Your browser does not support the audio element.</audio>
+	    </div>
+
+	    <div class="4u 12u$(xsmall)">
+	      Pianoroll excerpt Bass Variation 2
+	    </div>
+	    <div class="7u$ 12u$(xsmall) ">
+	      <img class='pianoroll' src="images/ex3/var2.png">
+	    </div>
+
+	    <div class="4u 12u$(xsmall)">
+	      Bass Variation 2
+	    </div>
+	    <div class="7u$ 12u$(xsmall)">
+	      <audio controls><source src="assets/ex3/source_bass_var2.mp3" type="audio/mpeg"/> Your browser does not support the audio element.</audio>
+	    </div>
+	  </div>
+	</section>
+      </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="copyright">
+	&copy; Maarten Grachten, Stefan Lattner and Emmanuel Deruty. All rights reserved. Design: <a href="http://templated.co">TEMPLATED</a>.
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/extra.js"></script>
+
+  </body>
 </html>
