@@ -34,22 +34,36 @@
     </section>
 
 
-    <section id="ex1" class="wrapper">
+    <section id="intro" class="wrapper">
       <div class="inner split">
 	<section>
-	  <p>This page provides supplementary material for the manuscript <i>BassNet: A Variational Gated Autoencoder for Conditional Generation of Bass Guitar Tracks with Learned Interactive Control</i>. The examples correspond to the examples discussed in Section 6.4.
+	  <p>This page provides supplementary material for the manuscript <i>BassNet: A Variational Gated Autoencoder for Conditional Generation of Bass Guitar Tracks with Learned Interactive Control</i> (Under review). The examples correspond to the examples discussed in Section 6.4.
 	  </p>
+	  <p>The examples below have been generated using a web interface for user interaction with <i>BassNet</i>. After uploading one or more input tracks, the user can play the song and listen to the generated bass guitar track along with a mix of the input tracks. The user can interactively control the latent position of the model by moving the dot in the 2D plane (the contours show the density of the latent space for the training data).
+	    The controls at the bottom allow the user to choose between different variants of the model, and to customize the sonification of the predicted outputs.
+	  </p>
+	</section>
+	<section>
+	  <div class="row 12u$(xsmall)">
+	    <p><i>BassNet</i> web interface:</p>
+	  </div>
+	  <div class="row 12u$(xsmall)">
+	    <img class="full-width" src="images/bn2_screenshot.png"/>
+	  </div>
 	</section>
       </div>
     </section>
 
     <!-- One -->
-    <section id="ex1" class="wrapper">
+    <section id="ex1" class="wrapper style2 alt">
       <h2>Example 1</h2>
       <div class="inner split">
 	<section>
-	  <p>The source is a piano excerpt with strong rubato but clear onsets.  In both examples BassNet follows the tempo changes and provides realistic harmonies.  A notable difference between the variations is that variation 1 tends to rhythmically follow the 16th notes in the higher piano register (but using mostly low pitched notes), whereas variation 2 follows the slower, lower part of the piano (but with higher notes), overall leading to a sparser and quieter result in variation 2.
+	  <p>The source is a piano excerpt with strong rubato but clear onsets.  In both examples <i>BassNet</i> follows the tempo changes and provides realistic harmonies.  A notable difference between the variations is that variation 1 tends to rhythmically follow the 16th notes in the higher piano register (but using mostly low pitched notes), whereas variation 2 follows the slower, lower part of the piano (but with higher notes), overall leading to a sparser and quieter result in variation 2.
 	  </p>
+	  <p>
+	    Original music: Emmanuel Deruty, 2012. <i>BassNet</i> MIDI output sonified with <i>Native-Instruments Kontakt</i>, <i>Scarbee MM-Bass</i> and <i>Cerberus Bass Amp</i>. 
+	  </p>	    
 	</section>
 
 	<section>
@@ -65,7 +79,7 @@
 	      Pianoroll excerpt Bass Variation 1
 	    </div>
 	    <div class="7u$ 12u$(xsmall) ">
-	      <img class='pianoroll' src="images/ex1/var1.png">
+	      <img class='full-width' src="assets/ex1/var1.png">
 	    </div>
 	    
 	    <div class="4u 12u$(xsmall)">
@@ -79,7 +93,7 @@
 	      Pianoroll excerpt Bass Variation 2
 	    </div>
 	    <div class="7u$ 12u$(xsmall) ">
-	      <img class='pianoroll' src="images/ex1/var2.png">
+	      <img class='full-width' src="assets/ex1/var2.png">
 	    </div>
 
 	    <div class="4u 12u$(xsmall)">
@@ -109,6 +123,9 @@
 	    At some point it remains silent for three seconds, then goes on again.
 	    It is not unlike a human bass player trying something different, succeeding at particular points and failing at others.
 	  </p>
+	  <p>
+	    Original music: Emmanuel Deruty, 2008. <i>BassNet</i> MIDI output sonified with <i>Native-Instruments Kontakt</i>, <i>Scarbee MM-Bass</i> and <i>Cerberus Bass Amp</i>. 
+	  </p>	    
 	</section>
 
 	<section>
@@ -124,7 +141,7 @@
 	      Pianoroll excerpt Bass Variation 1
 	    </div>
 	    <div class="7u$ 12u$(xsmall) ">
-	      <img class='pianoroll' src="images/ex2/var1.png">
+	      <img class='full-width' src="assets/ex2/var1.png">
 	    </div>
 	    
 	    <div class="4u 12u$(xsmall)">
@@ -138,7 +155,7 @@
 	      Pianoroll excerpt Bass Variation 2
 	    </div>
 	    <div class="7u$ 12u$(xsmall) ">
-	      <img class='pianoroll' src="images/ex2/var2.png">
+	      <img class='full-width' src="assets/ex2/var2.png">
 	    </div>
 
 	    <div class="4u 12u$(xsmall)">
@@ -163,9 +180,15 @@
 	    Like in previous example the predicted bass is transposed upward one octave and quantized to 16th notes.
 	  </p>
 	  <p>Both variations are quite similar in terms of pitch, and succeed in following the harmony of the guitar.
-	    In terms of rhythm BassNet produces uncommon grooves, likely in response to the atypical drum track.
+	    In terms of rhythm <i>BassNet</i> produces uncommon grooves, likely in response to the atypical drum track.
 	    Varying the latent position in this case leads to different grooves.
 	  </p>
+	  <p>
+	    Original music: Emmanuel Deruty, Yan Guérin, 2019.
+	    Drum programming made with CSL prototype <i>DrumNet</i> by Stefan Lattner and <i>Kontakt Studio Drummer</i>.
+	    <i>BassNet</i> MIDI output sonified with <i>Native-Instruments Kontakt</i>, <i>Scarbee MM-Bass</i> and <i>Cerberus Bass Amp</i>. 
+	  </p>	    
+
 	</section>
 	<section>
 	  <div class="row uniform">
@@ -180,7 +203,7 @@
 	      Pianoroll excerpt Bass Variation 1
 	    </div>
 	    <div class="7u$ 12u$(xsmall) ">
-	      <img class='pianoroll' src="images/ex3/var1.png">
+	      <img class='full-width' src="assets/ex3/var1.png">
 	    </div>
 	    
 	    <div class="4u 12u$(xsmall)">
@@ -194,7 +217,7 @@
 	      Pianoroll excerpt Bass Variation 2
 	    </div>
 	    <div class="7u$ 12u$(xsmall) ">
-	      <img class='pianoroll' src="images/ex3/var2.png">
+	      <img class='full-width' src="assets/ex3/var2.png">
 	    </div>
 
 	    <div class="4u 12u$(xsmall)">
@@ -208,6 +231,122 @@
       </div>
     </section>
 
+
+    <section class="wrapper">
+      <div class="inner split">
+	<section>
+	  <p>The following examples demonstrate work by musician <a href="https://www.facebook.com/sirianmusic/">Donn Healy</a> for Sony CSL (2020), in which he experiments with <i>BassNet</i> as a music production tool.
+	  </p>
+	</section>
+      </div>
+    </section>
+
+    <section class="wrapper style2 alt">
+      <h2>Example 4</h2>
+      <div class="inner split">
+	<section>
+	  <p>What musicians often value in their production tools (e.g. an effects rack, or a synthesizer) is personality &mdash; a persistent character that shapes the output in specific ways. Extended use of a tool tends to give musicians an intimate knowledge of its affordances, enabling them to use the tool effectively and efficiently.</p>
+
+	  <p>In this sense <i>BassNet</i> resembles traditional music production tools, but it offers novel ways of interaction. Specifically, <i>BassNet</i> proposes creative musical content in reaction to:
+	  </p>
+	    <ol>
+	      <li> the music content provided by the musician to <i>BassNet</i>;
+	      <li> the settings the musician chooses from the interface.
+	    </ol>
+	  <p>One interesting way to control <i>BassNet</i> is therefore not to to do it with the interface settings (2), but with musical input (1). It is possible to design inputs specifically to make <i>BassNet</i> react in a particular fashion.
+</p>
+<p>	  
+This is what musician Donn Healy does in this example. After spending time with <i>BassNet</i> to get a feel for its behavior, Donn starts the production of a music sample by designing drum beats specifically intended to get interesting results from <i>BassNet</i>. Donn integrates the results into the production, in turn modifying the drum beats in response to <i>BassNet</i> propositions.
+</p>
+
+<p>Donn qualifies this production method as a ``conversation'' with <i>BassNet</i>. His workflow for this example consists of the following steps:
+<ol>
+<li> Make 3 rhythmical motifs
+<li> Print them as one file and drop into <i>BassNet</i>
+<li> Experiment with <i>BassNet</i> and download multiple results
+<li> Select the best result and build a new beat inspired by the suggestion
+<li> Select another result and transpose, use as ‘dark pad’
+<li> Select another, transpose and use to make the distorted lead
+<li> Arrange
+<li> Mix & Master
+</ol>
+</p>
+	</section>
+	<section>
+	  <div class="row 4u 12u$(xsmall)">
+	    Audio result:
+	  </div>
+	  <div class="row 12u$ 12u$(xsmall)">
+	    <audio controls><source src="assets/ex4/Donn_Healy_BassNet_Sample_7_result.mp3" type="audio/mpeg"/> Your browser does not support the audio element.</audio>
+	  </div>
+	  <div class="row 4u 12u$(xsmall)">
+	    Video analysis:
+	  </div>
+	  <div class="row 12u$ 12u$(xsmall)">
+	    <video class='full-width' controls>
+	      <source src="assets/ex4/Donn_Healy_BassNet_Sample_7_analysis.webm" type="video/webm"/>
+	      <source src="assets/ex4/Donn_Healy_BassNet_Sample_7_analysis.mp4" type="video/mp4"/> Your browser does not support the video element.
+	    </video>
+	  </div>
+	</section>
+      </div>
+    </section>
+
+
+
+    <section class="wrapper style2 alt">
+      <h2>Example 5</h2>
+      <div class="inner split">
+	<section>
+	  <p>The character of <i>BassNet</i>'s behavior depends on factors like its window size over the audio, and the data on which it is trained.
+	    In this example, Donn Healy takes advantage of <i>BassNet</i>’s different personalities to build drum & bass music from a conversation with the different models.
+	    He uses the following models:
+	    <!-- <dl> -->
+	    <!--   <dt>short-pr</dt><dd>Model with a 0.8s audio window, trained on the pop/rock dataset (PR, see manuscript for details)</dd> -->
+	    <!--   <dt>long-pr</dt><dd>Model with a 6.4s audio window, trained on the PR dataset</dd> -->
+	    <!--   <dt>long-pr-perc</dt><dd>Like <b>long-pr</b>, but trained only on the percussive parts of the song</dd> -->
+	    <!--   <dt>long-pr-harm</dt><dd>Like <b>long-pr</b>, but trained only on the harmonic parts of the song</dd> -->
+	    <!-- </dl> -->
+	    <ul>
+	      <li><b>short-pr</b> &mdash; Model with a 0.8s audio window, trained on the pop/rock dataset (PR, see manuscript for details)
+	      <li><b>long-pr</b> &mdash; Model with a 6.4s audio window, trained on the PR dataset
+	      <li><b>long-pr-perc</b> &mdash; Like <b>long-pr</b>, but trained only on the percussive parts of the song
+	      <li><b>long-pr-harm</b> &mdash; Like <b>long-pr</b>, but trained only on the harmonic parts of the song</dd>
+	    </ul>
+	  </p>
+
+<p>Procedure:</p>
+<ol>
+<li> Build a ‘drum & bass’ beat – drum parts only
+<li> Feed the beat to <i>BassNet</i>
+<li> Explore <b>long-pr</b> and download audio/MIDI
+<li> Explore <b>long-pr-perc</b> and download audio/MIDI
+<li> Add some chords to loop in order to test <b>long-pr-harm</b>
+<li> <b>long-pr-harm</b> did not succeed in this case, but the harmonic content stimulated the most cohesive story from BN to date in <b>short-pr</b> mode; Download audio/MIDI
+<li> In the spirit of seeking faster work flows with AI assistance, opt to use the audio output rather than MIDI output
+<li> Edit the basslines as desired
+<li> Adjust the sound of basslines to taste, use CSL's <a href="https://csl.sony.fr/profile-eq-and-resonance-eq-real-time-audio-equalizers-with-deep-learning/">Profile EQ</a> directly on bass parts
+<li> Arrange
+<li> Mix & master
+</ol>
+
+	</section>
+	<section>
+	  <div class="row 4u 12u$(xsmall)">
+	    Audio result:
+	  </div>
+	  <div class="row 12u$ 12u$(xsmall)">
+	    <audio controls><source src="assets/ex5/Donn_Healy_BassNet_Sample_12_result.mp3" type="audio/mpeg"/> Your browser does not support the audio element.</audio>
+	  </div>
+	  <div class="row 4u 12u$(xsmall)">
+	    Video analysis:
+	  </div>
+	  <div class="row 12u$ 12u$(xsmall)">
+	    <img class='full-width' src="assets/ex5/Donn_Healy_BassNet_Sample_12_structure.png"/>
+	  </div>
+	</section>
+      </div>
+    </section>
 
 
     <!-- Footer -->
